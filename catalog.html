@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <a href="./index.html"
+        ><img src="./img/nerds-logo.svg" width="160" height="65" alt=""
+      /></a>
+      <nav>
+        <ul class="header-nav-list">
+          <li><a href="./index.html">Студия</a></li>
+          <li><a href="./index.html">Клиенты</a></li>
+          <li><a href="./catalog.html">Магазин</a></li>
+          <li><a href="./index.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="#">Корзина</a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-catalog">
+      <h1>Магазин готовых шаблонов</h1>
+
+      <div class="container">
+        <section class="catalog-filter">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form class="catalog-filter-form" action="" method="POST">
+            <fieldset class="form-filter-cost">
+              <legend>Стоимость:</legend>
+
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+
+                <div class="price-controls">
+                  <label>
+                      От <input type="number" name="min-number" value="0">
+                  </label>
+                  <label>
+                    До <input type="number" name="max-number" value="15000">
+                  </label>
+                </div>
+              </div>
+              
+            </fieldset>
+  
+            <fieldset class="form-filter-grid">
+              <legend>Сетка:</legend>
+              <ul class="form-filter-list">
+                <li>
+                  <label>
+                    <input
+                    class="visually-hidden radio-input"
+                      type="radio"
+                      name="filter-grid"
+                      value="adaptability"
+                      checked
+                    />
+                    <span>Адаптивная</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden radio-input" type="radio" name="filter-grid" value="fixed" />
+                    <span>Фиксированная</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden radio-input" type="radio" name="filter-grid" value="flexible" />
+                    <span>Резиновая</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+  
+            <fieldset class="form-filter-features">
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <label>
+                    
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="slider" checked />
+                    <span>Слайдер</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="block-benefits" />
+                    <span>Блок преимуществ</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="news" checked />
+                    <span>Новости</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="galary" />
+                    <span>Галерея</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="basket" />
+                    <span>Корзина</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="button">ПОКАЗАТЬ</button>
+          </form>
+        </section>
+  
+        <div class="catalog-container">
+          <section class="sorting">
+            <h2>Сортировать:</h2>
+            <ul class="sorting-list">
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По названию</li>
+            </ul>
+          </section>
+    
+          <section class="catalog">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <ul class="catalog-list">
+              <li>
+                  <div class="catalog-item-header">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <img src="./img/img-sedona 1.png" alt="" width="360" height="576" />
+                <!-- <h3>Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+                <p>9 900 ₽</p> -->
+              </li>
+              <li>
+                <div class="catalog-item-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img src="./img/img-pink 1.png" alt="" width="360" height="576" />
+              </li>
+              <li>
+                <div class="catalog-item-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img
+                  src="./img/img-barbershop 1.png"
+                  alt=""
+                  width="360"
+                  height="576"
+                />
+              </li>
+              <li>
+                <div class="catalog-item-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img src="./img/img-mishka 1.png" alt="" width="360" height="576" />
+              </li>
+              <li>
+                <div class="catalog-item-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img src="./img/img-aplus 1.png" alt="" width="360" height="576" />
+              </li>
+              <li>
+                <div class="catalog-item-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <img src="./img/img-kvast 1.png" alt="" width="360" height="576" />
+              </li>
+            </ul>
+            <ul class="catolog-list-button">
+              <li><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">Следующая</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+     <!-- FOOTER -->
+    <footer>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="./img/Group 12.png" alt="" width="1440" height="416" />
+        <div class="map-connection">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>
+            191186, Санкт-Петербург,<br />
+             ул. Б. Конюшенная, д. 19/8 <br />
+            тел. +7 (812) 275-75-75
+          </p>
+          <a class="button" href="">Напишите нам</a>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="social">
+          <h2 class="visually-hidden">Ми в соцсетях</h2>
+          <ul>
+            <li>
+              <div class="social-box">
+                <a href=""
+                  ><img
+                    src="./img/SVG/vk-icon.svg"
+                    width="26"
+                    height="15"
+                    alt="Вконтакте"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="social-box">
+                <a href=""
+                  ><img
+                    src="./img/SVG/fb-icon.svg"
+                    width="12"
+                    height="22"
+                    alt="Фейсбук"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="social-box">
+                <a href=""
+                  ><img
+                    src="./img/SVG/insta-icon.svg"
+                    width="21"
+                    height="21"
+                    alt="Инстаграм"
+                /></a>
+              </div>
+            </li>
+          </ul>
+        </section>
+  
+        
+        <div class="footer-motto-container">
+          <p class="footer-motto">Давайте дружить, это выгодно!</p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- POPAP -->
+    <section class="popap">
+      <h2>Напишите нам</h2>
+      <form class="popap-form" action="" method="POST">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш email:
+            <input type="email" name="email" placeholder="email@example.com " />
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <textarea
+              name="text"
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="В свободной форме"
+            ></textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрить</button>
+    </section>
+  </body>
+</html>
